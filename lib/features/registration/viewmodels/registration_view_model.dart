@@ -20,7 +20,8 @@ class RegistrationViewModel extends ChangeNotifier {
     await Future<void>.delayed(const Duration(milliseconds: 650));
 
     _submittedData = data;
-    _statusMessage = 'Đăng ký thành công! Dữ liệu đã vượt qua các quy tắc kiểm tra.';
+    _statusMessage =
+        'Đăng ký thành công! Dữ liệu đã vượt qua các quy tắc kiểm tra.';
     _isSubmitting = false;
     notifyListeners();
     return true;

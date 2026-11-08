@@ -21,7 +21,8 @@ class Topic06App extends StatelessWidget {
         inputDecorationTheme: InputDecorationTheme(
           filled: true,
           fillColor: Colors.white,
-          contentPadding: const EdgeInsets.symmetric(horizontal: 16, vertical: 17),
+          contentPadding:
+              const EdgeInsets.symmetric(horizontal: 16, vertical: 17),
           border: OutlineInputBorder(
             borderRadius: BorderRadius.circular(14),
             borderSide: const BorderSide(color: Color(0xFFE5E7EF)),

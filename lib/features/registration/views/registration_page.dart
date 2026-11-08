@@ -49,7 +49,8 @@ class _RegistrationPageState extends State<RegistrationPage> {
     if (!isValid) return;
     if (!_acceptedTerms) {
       ScaffoldMessenger.of(context).showSnackBar(
-        const SnackBar(content: Text('Vui lòng đồng ý với điều khoản để tiếp tục.')),
+        const SnackBar(
+            content: Text('Vui lòng đồng ý với điều khoản để tiếp tục.')),
       );
       return;
     }

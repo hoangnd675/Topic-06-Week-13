@@ -12,7 +12,8 @@ class InputValidators {
     final requiredError = required(value, fieldName: 'Họ và tên');
     if (requiredError != null) return requiredError;
     if (value!.trim().length < 2) return 'Họ tên phải có ít nhất 2 ký tự.';
-    if (RegExp(r'[0-9]').hasMatch(value)) return 'Họ tên không được chứa chữ số.';
+    if (RegExp(r'[0-9]').hasMatch(value))
+      return 'Họ tên không được chứa chữ số.';
     return null;
   }
 
@@ -38,7 +39,8 @@ class InputValidators {
     final requiredError = required(value, fieldName: 'Mật khẩu');
     if (requiredError != null) return requiredError;
     if (value!.length < 8) return 'Mật khẩu phải có ít nhất 8 ký tự.';
-    if (!RegExp(r'[A-Z]').hasMatch(value)) return 'Cần ít nhất 1 chữ cái viết hoa.';
+    if (!RegExp(r'[A-Z]').hasMatch(value))
+      return 'Cần ít nhất 1 chữ cái viết hoa.';
     if (!RegExp(r'[0-9]').hasMatch(value)) return 'Cần ít nhất 1 chữ số.';
     return null;
   }

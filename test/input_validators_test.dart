@@ -32,8 +32,10 @@ void main() {
     });
 
     test('checks password confirmation', () {
-      expect(InputValidators.confirmPassword('Password123', 'Password123'), isNull);
-      expect(InputValidators.confirmPassword('Other1234', 'Password123'), isNotNull);
+      expect(InputValidators.confirmPassword('Password123', 'Password123'),
+          isNull);
+      expect(InputValidators.confirmPassword('Other1234', 'Password123'),
+          isNotNull);
     });
   });
 }

@@ -30,7 +30,7 @@ flutter run -d chrome
 ## Bản demo chạy trên vercel
 https://topic-06-week-13-hoangnd675.vercel.app
 
-## Các nội dụng test
+## Các nội dụng kiểm tra
 1. Bấm đăng ký khi để trống: các trường bắt buộc hiển thị lỗi.
 2. Nhập email sai, số điện thoại ngắn hoặc mật khẩu yếu: validator phản hồi cụ thể.
 3. Nhập mật khẩu xác nhận không khớp: hiển thị lỗi.

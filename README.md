@@ -1,15 +1,6 @@
-# Topic 06 – Week 13 | Form Validation
+# Topic 06 – Week 13
 
-Ứng dụng demo Flutter Web về **Biểu mẫu và kiểm tra dữ liệu đầu vào**, triển khai theo Clean Code và MVVM.
-
-## Nội dung theo đề bài
-- TextField / TextFormField: nhập họ tên, email, số điện thoại, mật khẩu.
-- Form và GlobalKey<FormState>: quản lý và kiểm tra toàn bộ biểu mẫu.
-- Validator: kiểm tra bắt buộc, định dạng email, số điện thoại, độ mạnh mật khẩu và xác nhận mật khẩu.
-- TextEditingController: đọc và xóa dữ liệu nhập.
-- FocusNode: chuyển focus giữa các trường.
-- Phản hồi lỗi khi nhập; thông báo thành công khi dữ liệu hợp lệ.
-- Minh họa dữ liệu hợp lệ, không hợp lệ và thao tác làm mới biểu mẫu.
+# Biểu mẫu & kiểm tra dữ liệu
 
 ## Kiến trúc
 ```
@@ -36,24 +27,12 @@ flutter pub get
 flutter run -d chrome
 ```
 
-Build bản web:
-```bash
-flutter build web --release
-```
-Thư mục triển khai: `build/web`.
+## Bản demo chạy trên vercel
+https://topic-06-week-13-hoangnd675.vercel.app
 
-## Kiểm tra chất lượng
-```bash
-dart format .
-flutter analyze
-flutter test
-```
-
-## Kịch bản demo
+## Các nội dụng test
 1. Bấm đăng ký khi để trống: các trường bắt buộc hiển thị lỗi.
 2. Nhập email sai, số điện thoại ngắn hoặc mật khẩu yếu: validator phản hồi cụ thể.
 3. Nhập mật khẩu xác nhận không khớp: hiển thị lỗi.
 4. Nhập đúng dữ liệu và đồng ý điều khoản: nhận thông báo đăng ký thành công.
-5. Bấm **Làm mới biểu mẫu**: xóa dữ liệu và trạng thái.
-
-> Đây là demo frontend; thao tác gửi hiện mô phỏng bất đồng bộ, chưa kết nối backend/database.
+5. Bấm "Làm mới biểu mẫu": xóa dữ liệu và trạng thái.

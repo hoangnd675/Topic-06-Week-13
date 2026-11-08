@@ -369,7 +369,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
             const SizedBox(height: 16),
             _label('Vai trò'),
             DropdownButtonFormField<String>(
-              value: _role,
+              initialValue: _role,
               decoration: _decoration('Chọn vai trò', Icons.badge_outlined),
               items: const ['Sinh viên', 'Giảng viên', 'Khách mời']
                   .map(

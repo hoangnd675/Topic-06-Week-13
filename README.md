@@ -1,6 +1,5 @@
 # Topic 06 – Week 13
-
-# Biểu mẫu & kiểm tra dữ liệu
+Biểu mẫu & kiểm tra dữ liệu
 
 ## Kiến trúc
 ```

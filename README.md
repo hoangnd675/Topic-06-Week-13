@@ -27,7 +27,7 @@ flutter run -d chrome
 ```
 
 ## Bản thử nghiệmchạy trên vercel
-https://topic-06-week-13-hoangnd675.vercel.app
+https://topic-06-week-13.vercel.app
 
 ## Các nội dụng kiểm tra
 1. Bấm đăng ký khi để trống: các trường bắt buộc hiển thị lỗi.

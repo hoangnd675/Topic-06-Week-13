@@ -26,7 +26,7 @@ flutter pub get
 flutter run -d chrome
 ```
 
-## Bản demo chạy trên vercel
+## Bản thử nghiệmchạy trên vercel
 https://topic-06-week-13-hoangnd675.vercel.app
 
 ## Các nội dụng kiểm tra

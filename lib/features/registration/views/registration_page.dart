@@ -134,8 +134,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
               Expanded(flex: 6, child: _buildFormCard()),
             ],
           ),
-        const SizedBox(height: 24),
-        _buildFooter(),
       ],
     );
   }
@@ -156,38 +154,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
           ),
         ),
         const SizedBox(width: 12),
-        const Expanded(
-          child: Text(
-            'FLUTTER LAB  /  TOPIC 06',
-            style: TextStyle(
-              fontSize: 12,
-              letterSpacing: 1.5,
-              fontWeight: FontWeight.w800,
-              color: Color(0xFF6B6E80),
-            ),
-          ),
-        ),
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
-          decoration: BoxDecoration(
-            color: const Color(0xFFE9F8F0),
-            borderRadius: BorderRadius.circular(30),
-          ),
-          child: const Row(
-            children: [
-              Icon(Icons.circle, size: 7, color: Color(0xFF20A66A)),
-              SizedBox(width: 7),
-              Text(
-                'LIVE DEMO',
-                style: TextStyle(
-                  fontSize: 11,
-                  fontWeight: FontWeight.w800,
-                  color: Color(0xFF168653),
-                ),
-              ),
-            ],
-          ),
-        ),
       ],
     );
   }
@@ -196,23 +162,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Container(
-          padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 7),
-          decoration: BoxDecoration(
-            color: const Color(0xFFEAE9FF),
-            borderRadius: BorderRadius.circular(30),
-          ),
-          child: const Text(
-            'CLEAN CODE  •  MVVM',
-            style: TextStyle(
-              color: Color(0xFF554DE0),
-              fontSize: 11,
-              fontWeight: FontWeight.w800,
-              letterSpacing: 1,
-            ),
-          ),
-        ),
-        const SizedBox(height: 22),
         const Text(
           'Biểu mẫu &\nkiểm tra dữ liệu',
           style: TextStyle(
@@ -223,81 +172,7 @@ class _RegistrationPageState extends State<RegistrationPage> {
             color: Color(0xFF171A2B),
           ),
         ),
-        const SizedBox(height: 16),
-        const Text(
-          'Xây dựng biểu mẫu đăng ký với quy tắc xác thực rõ ràng, phản hồi tức thì và trải nghiệm nhập liệu thân thiện.',
-          style: TextStyle(
-            fontSize: 15,
-            height: 1.7,
-            color: Color(0xFF73778A),
-          ),
-        ),
-        const SizedBox(height: 28),
-        _feature(
-          Icons.widgets_outlined,
-          'TextField & TextFormField',
-          'Nhập liệu và hiển thị lỗi theo từng trường.',
-        ),
-        _feature(
-          Icons.verified_user_outlined,
-          'Validator & FormState',
-          'Kiểm tra dữ liệu trước khi gửi biểu mẫu.',
-        ),
-        _feature(
-          Icons.key_outlined,
-          'GlobalKey & FocusNode',
-          'Quản lý trạng thái form và điều hướng focus.',
-        ),
-        _feature(
-          Icons.layers_outlined,
-          'MVVM Architecture',
-          'Tách View, ViewModel và Model độc lập.',
-        ),
       ],
-    );
-  }
-
-  Widget _feature(IconData icon, String title, String description) {
-    return Padding(
-      padding: const EdgeInsets.only(bottom: 18),
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: [
-          Container(
-            width: 38,
-            height: 38,
-            decoration: BoxDecoration(
-              color: Colors.white,
-              borderRadius: BorderRadius.circular(12),
-            ),
-            child: Icon(icon, color: const Color(0xFF635BFF), size: 19),
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  title,
-                  style: const TextStyle(
-                    fontWeight: FontWeight.w700,
-                    color: Color(0xFF292D40),
-                  ),
-                ),
-                const SizedBox(height: 3),
-                Text(
-                  description,
-                  style: const TextStyle(
-                    fontSize: 12,
-                    height: 1.5,
-                    color: Color(0xFF85899A),
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
     );
   }
 
@@ -566,17 +441,4 @@ class _RegistrationPageState extends State<RegistrationPage> {
         ),
       );
 
-  Widget _buildFooter() {
-    return const Center(
-      child: Text(
-        'TOPIC 06  •  FORM VALIDATION  •  FLUTTER + DART',
-        style: TextStyle(
-          fontSize: 10,
-          letterSpacing: 1.2,
-          fontWeight: FontWeight.w700,
-          color: Color(0xFF9A9EAD),
-        ),
-      ),
-    );
-  }
 }

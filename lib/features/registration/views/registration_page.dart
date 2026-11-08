@@ -110,8 +110,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        _buildTopBar(),
-        const SizedBox(height: 28),
         if (compact)
           Column(
             children: [
@@ -134,26 +132,6 @@ class _RegistrationPageState extends State<RegistrationPage> {
               Expanded(flex: 6, child: _buildFormCard()),
             ],
           ),
-      ],
-    );
-  }
-
-  Widget _buildTopBar() {
-    return Row(
-      children: [
-        Container(
-          width: 42,
-          height: 42,
-          decoration: BoxDecoration(
-            color: const Color(0xFFEAE9FF),
-            borderRadius: BorderRadius.circular(13),
-          ),
-          child: const Icon(
-            Icons.fact_check_rounded,
-            color: Color(0xFF635BFF),
-          ),
-        ),
-        const SizedBox(width: 12),
       ],
     );
   }
